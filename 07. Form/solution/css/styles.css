@@ -1,0 +1,93 @@
+html {
+  font-size: 20px;
+}
+
+form {
+  position: relative;
+  padding: 10px 18px 20px 24px;
+  background: #fff;
+  border-radius: 10px;
+  width: 35%;
+  box-shadow: -1px 9px 24px -9px rgba(0, 0, 0, 0.52);
+}
+
+label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  margin-bottom: 1em;
+}
+
+label[for="zip"] {
+  display: grid;
+  grid-template-columns: 150px 1fr 2fr;
+}
+
+label[for="zip"] :first-child {
+  width: 85%;
+}
+
+input,
+textarea {
+  padding: 8px 20px 8px 13px;
+  background: hsla(28, 25%, 95%, 1);
+  font-size: 0.75rem;
+  width: 100%;
+  resize: none;
+  font-weight: 400;
+  border: none;
+  border-radius: 5px;
+
+  -webkit-appearance: none;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+input:focus,
+textarea:focus {
+  background: hsla(28, 25%, 95%, 0);
+  border: 1px lightgrey solid;
+}
+
+input:focus {
+  background-position-x: calc(100% - 16px);
+  background-position-y: 50%;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  /* color: currentColor; */
+}
+
+button[type="submit"] {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  font-size: 0.8rem;
+  border: 0;
+  background: hsla(0, 10%, 35%, 1);
+  color: #fff;
+
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+button[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background: #ece5df;
+}
